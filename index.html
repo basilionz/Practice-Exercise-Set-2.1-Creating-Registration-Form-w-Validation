@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Register</h2>
+
+  <form id="registerForm">
+    <div class="row">
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="lastName" placeholder="Last Name" required>
+    </div>
+
+    <div class="row">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="tel" placeholder="Phone Number">
+    </div>
+
+    <input type="email" placeholder="Your E-mail Address" required>
+
+    <div class="row">
+      <select required>
+        <option value="">Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <input type="date" required>
+    </div>
+
+    <div class="row">
+      <select id="country" required>
+        <option value="">Country</option>
+        <option>Philippines (PHP)</option>
+        <option>Japan</option>
+        <option>USA</option>
+        <option>Russia</option>
+        <option>China</option>
+      </select>
+
+      <input type="text" placeholder="Company Name">
+    </div>
+
+    <div class="row">
+      <textarea placeholder="Home Address"></textarea>
+      <textarea placeholder="Office Address"></textarea>
+    </div>
+
+    <div class="row">
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+    </div>
+
+    <p id="error"></p>
+
+    <label>
+      <input type="checkbox" required> I agree with the terms & conditions
+    </label>
+
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
